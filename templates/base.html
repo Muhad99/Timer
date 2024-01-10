@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% extends "bootstrap/base.html" %}
+    {% block title %}Flasky{% endblock %}
+    {% block navbar %}
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">HOME</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Exam</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Scores</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block content %}
+    
+    <div class="container">
+        <div class="page-header">
+            <h1><span style="margin-left: 70%;">TIME: {{ date_time}}</span></h1>
+
+            <h1><div id="timer" name="Timer:"></div></h1>
+            <script>
+
+                var seconds = 60;
+                function countdown() {
+                    seconds--;
+                    var minutes = Math.floor(seconds / 60);
+                    var remainingSeconds = seconds % 60;
+                    if (remainingSeconds < 10) {
+                        remainingSeconds = "0" + remainingSeconds;
+                    }
+                    document.getElementById("timer").innerHTML = minutes + ":" + remainingSeconds;
+                    if (seconds == 0) {
+                        clearInterval(countdownTimer);
+                        alert("Time's up!");
+                    }
+
+                }
+                var countdownTimer = setInterval(countdown, 1000);
+            </script>
+            <br>
+            <h1>INSTRUCTION:</h1>
+        </div>
+        <div class="page_content">
+            <h4>1. Who is the President of Egypt?<br><br>
+                <input type="radio" name="gender" value="John"> a. John
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Peter
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Matthew
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Moses
+            <br>
+            <h4>2. what is the name of an actor named "The rock"?<br><br>
+                <input type="radio" name="gender" value="John"> a. Kelly Parker
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. John Cena
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Dwayne Johnson
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Tom Holland
+            <br>
+            <h4>3. Who is the owner of Facebook ?<br><br>
+                <input type="radio" name="gender" value="John"> a. Elon Musk
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Tesla Wesley
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Bill Gates
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Mark Zukerberg
+            <br>
+            <h4>4. Most written programming language ?<br><br>
+                <input type="radio" name="gender" value="John"> a. Java
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Html
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Python
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Php
+            <br>
+            <h4>5. Who is the owner of Micro-Soft ?<br><br>
+                <input type="radio" name="gender" value="John"> a. Bill Gates
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Zen Bill
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Mark Zukerberg
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Benard Wilton
+            <br>
+            <h4>6. Who acted the movie "I am a Legend"?<br><br>
+                <input type="radio" name="gender" value="John"> a. Zack Synder
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Will Smith
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Denzel Washington
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Peter Parker
+            <br>
+            <h4>7. Which of these is not a properties of matter?<br><br>
+                <input type="radio" name="gender" value="John"> a. Gas 
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Liquor
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Liquid
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Solid
+            <br>
+            <h4>8. The city New York is in which country?<br><br>
+                <input type="radio" name="gender" value="John"> a. USA
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. UK
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Canada
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Nigeria
+            <br>
+            <h4>9. what is said to have weight and occupy space ?<br><br>
+                <input type="radio" name="gender" value="John"> a. Matter
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Air
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Sand
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Water
+            <br>
+            <h4>10. Who is the CEO of Jascube Tech?<br><br>
+                <input type="radio" name="gender" value="John"> a. John Adeyemi
+                <br><br>
+                <input type="radio" name="gender" value="Peter"> b. Mohammed Ahmed
+                <br><br>
+                <input type="radio" name="gender" value="Matthew"> c. Muhad Adesiji
+                <br><br>
+                <input type="radio" name="gender" value="Moses"> d. Ifeanyi Joshua
+            </h4>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

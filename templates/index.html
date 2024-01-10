@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+
+    {% import "bootstrap/wtf.html" as wtf %}
+
+    {% block title %}Flasky{% endblock %}
+
+    {% block page_content %}
+    <div class="page-header">
+        <h1>TIME: {{ date_time }}</h1>
+        <br> <br> <br>
+        <h1>INSTRUCTION:</h1>
+    </div>
+    <div class="page_content">
+        <p>1. Who is the President of Egypt?
+            a. John b. Peter
+            c. Matthew d. Moses
+        </p>
+
+    </div>
+    {% endblock %}
+</body>
+
+</html>
