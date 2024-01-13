@@ -34,12 +34,91 @@
     {% endblock %}
 
     {% block content %}
-    
+
     <div class="container">
         <div class="page-header">
-            <h1><span style="margin-left: 70%;">TIME: {{ date_time}}</span></h1>
+            <h1><span style="margin-left: 70%;">TIME: {{ date_time}}
+                </span>
+            </h1>
+            <br><br>
+            <style>
+                table,
+                th,
+                td {
+                    border: 3px solid black;
+                    border-collapse: collapse;
+                    margin-left: 60%;
+                }
+            </style>
+            <table style="position: fixed;">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>32</td>
+                    <td>33</td>
+                    <td>34</td>
+                    <td>35</td>
+                    <td>36</td>
+                    <td>37</td>
+                    <td>38</td>
+                    <td>39</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>42</td>
+                    <td>43</td>
+                    <td>44</td>
+                    <td>45</td>
+                    <td>46</td>
+                    <td>47</td>
+                    <td>48</td>
+                    <td>49</td>
+                    <td>50</td>
+                </tr>
 
-            <h1><div id="timer" name="Timer:"></div></h1>
+
+
+                </tr>
+            </table>
+            <h1>
+                <div id="timer" name="Timer:"></div>
+            </h1>
             <script>
 
                 var seconds = 60;
@@ -63,96 +142,108 @@
             <h1>INSTRUCTION:</h1>
         </div>
         <div class="page_content">
-            <h4>1. Who is the President of Egypt?<br><br>
-                <input type="radio" name="gender" value="John"> a. John
+            <h3>1. Who is the President of Egypt?<br><br>
+                <input type="radio" name="choice0" value=""> a. John
                 <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Peter
+                <input type="radio" name="choice0" value=""> b. Peter
                 <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Matthew
+                <input type="radio" name="choice0" value=""> c. Matthew
                 <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Moses
+                <input type="radio" name="choice0" value=""> d. Moses
+            </h3>
             <br>
-            <h4>2. what is the name of an actor named "The rock"?<br><br>
-                <input type="radio" name="gender" value="John"> a. Kelly Parker
+
+            <h3>2. what is the name of an actor named "The rock"?<br><br>
+                <input type="radio" name="choice0" value=""> a. Kelly Parker
                 <br><br>
-                <input type="radio" name="gender" value="Peter"> b. John Cena
+                <input type="radio" name="choice0" value=""> b. John Cena
                 <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Dwayne Johnson
+                <input type="radio" name="choice0" value=""> c. Dwayne Johnson
                 <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Tom Holland
+                <input type="radio" name="choice0" value=""> d. Tom Holland
+            </h3>
+
             <br>
-            <h4>3. Who is the owner of Facebook ?<br><br>
-                <input type="radio" name="gender" value="John"> a. Elon Musk
+
+            <h3>3. Who is the owner of Facebook ?<br><br>
+                <input type="radio" name="choice0" value=""> a. Elon Musk
                 <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Tesla Wesley
+                <input type="radio" name="choice0" value=""> b. Tesla Wesley
                 <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Bill Gates
+                <input type="radio" name="choice0" value=""> c. Bill Gates
                 <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Mark Zukerberg
+                <input type="radio" name="choice0" value=""> d. Mark Zukerberg
+            </h3>
             <br>
-            <h4>4. Most written programming language ?<br><br>
-                <input type="radio" name="gender" value="John"> a. Java
+            <h3>4. Most written programming language ?<br><br>
+                <input type="radio" name="choice0" value=""> a. Java
                 <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Html
+                <input type="radio" name="choice0" value=""> b. Html
                 <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Python
+                <input type="radio" name="choice0" value=""> c. Python
                 <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Php
+                <input type="radio" name="choice0" value=""> d. Php
+            </h3>
             <br>
-            <h4>5. Who is the owner of Micro-Soft ?<br><br>
-                <input type="radio" name="gender" value="John"> a. Bill Gates
-                <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Zen Bill
-                <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Mark Zukerberg
-                <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Benard Wilton
-            <br>
-            <h4>6. Who acted the movie "I am a Legend"?<br><br>
-                <input type="radio" name="gender" value="John"> a. Zack Synder
-                <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Will Smith
-                <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Denzel Washington
-                <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Peter Parker
-            <br>
-            <h4>7. Which of these is not a properties of matter?<br><br>
-                <input type="radio" name="gender" value="John"> a. Gas 
-                <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Liquor
-                <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Liquid
-                <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Solid
-            <br>
-            <h4>8. The city New York is in which country?<br><br>
-                <input type="radio" name="gender" value="John"> a. USA
-                <br><br>
-                <input type="radio" name="gender" value="Peter"> b. UK
-                <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Canada
-                <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Nigeria
-            <br>
-            <h4>9. what is said to have weight and occupy space ?<br><br>
-                <input type="radio" name="gender" value="John"> a. Matter
-                <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Air
-                <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Sand
-                <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Water
-            <br>
-            <h4>10. Who is the CEO of Jascube Tech?<br><br>
-                <input type="radio" name="gender" value="John"> a. John Adeyemi
-                <br><br>
-                <input type="radio" name="gender" value="Peter"> b. Mohammed Ahmed
-                <br><br>
-                <input type="radio" name="gender" value="Matthew"> c. Muhad Adesiji
-                <br><br>
-                <input type="radio" name="gender" value="Moses"> d. Ifeanyi Joshua
-            </h4>
+                <h3>5. Who is the owner of Micro-Soft ?<br><br>
+                    <input type="radio" name="choice0" value=""> a. Bill Gates
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> b. Zen Bill
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> c. Mark Zukerberg
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> d. Benard Wilton
+                </h3>
+                <br>
+                <h3>6. Who acted the movie "I am a Legend"?<br><br>
+                    <input type="radio" name="choice0" value=""> a. Zack Synder
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> b. Will Smith
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> c. Denzel Washington
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> d. Peter Parker
+                </h3>
+                <br>
+                <h3>7. Which of these is not a properties of matter?<br><br>
+                    <input type="radio" name="choice0" value=""> a. Gas
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> b. Liquor
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> c. Liquid
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> d. Solid
+                </h3>
+                <br>
+                <h3>8. The city New York is in which country?<br><br>
+                    <input type="radio" name="choice0" value=""> a. USA
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> b. UK
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> c. Canada
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> d. Nigeria
+                </h3>
+                <br>
+                <h3>9. what is said to have weight and occupy space ?<br><br>
+                    <input type="radio" name="choice0" value=""> a. Matter
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> b. Air
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> c. Sand
+                    <br><br>
+                    <input type="radio" name="choice0" value=""> d. Water
+                    <br>
+                    </h3>
+                    <h3>10. Who is the CEO of Jascube Tech?<br><br>
+                        <input type="radio" name="choice0" value=""> a. John Adeyemi
+                        <br><br>
+                        <input type="radio" name="choice0" value=""> b. Mohammed Ahmed
+                        <br><br>
+                        <input type="radio" name="choice0" value=""> c. Muhad Adesiji
+                        <br><br>
+                        <input type="radio" name="choice0" value=""> d. Ifeanyi Joshua
+                    </h3>
         </div>
     </div>
     {% endblock %}
