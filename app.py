@@ -2,7 +2,7 @@ from flask import Flask,render_template, Response, request, redirect, url_for, s
 from datetime import datetime
 from flask_bootstrap import Bootstrap
 import re
-import time
+import datetime
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
 
@@ -26,9 +26,9 @@ bootstrap = Bootstrap(app)
 
 @app.route('/index')
 def index():
-    now = datetime.now()
+    now = datetime.now() # current date and time
     date_time = now.strftime("%H:%M:%S")
-    return render_template('index.html', date_time=date_time)
+    return render_template('base.html', date_time=date_time)
 
 @app.route('/login/index')
 def home():
