@@ -24,11 +24,11 @@ mysql = MySQL(app)
 
 bootstrap = Bootstrap(app)
 
-@app.route('/index')
-def index():
-    now = datetime.now() # current date and time
-    date_time = now.strftime("%H:%M:%S")
-    return render_template('base.html', date_time=date_time)
+# @app.route('/index')
+# def index():
+#     now = datetime.now() # current date and time
+#     date_time = now.strftime("%H:%M:%S")
+#     return render_template('base.html', date_time=date_time)
 
 @app.route('/login/index')
 def home():
