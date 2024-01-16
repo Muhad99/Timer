@@ -37,9 +37,7 @@
 
     <div class="container">
         <div class="page-header">
-            <h1><span style="margin-left: 70%;">TIME: {{ date_time}}
-                </span>
-            </h1>
+            <h1><span style="margin-left: 70%;">TIME:{{ date_time }}</span></h1>
             <br><br>
             <style>
                 table,
@@ -142,6 +140,7 @@
             <h1>INSTRUCTION:</h1>
         </div>
         <div class="page_content">
+            <div id="question1">
             <h3>1. Who is the President of Egypt?<br><br>
                 <input type="radio" name="JohnPeterMatthewMoses"  value=""> a. John
                 <br><br>
@@ -151,8 +150,10 @@
                 <br><br>
                 <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
             </h3>
+            <button type="button" id="next">Next</button>
+            </div>
             <br>
-
+            <div id="question2">
             <h3>2. what is the name of an actor named "The rock"?<br><br>
                 <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
                 a. Kelly Parker
@@ -166,9 +167,11 @@
                 <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
                 d. Tom Holland
             </h3>
+            <button type="button" id="next">Next</button>
+            </div>
 
             <br>
-
+            <div id="question3">
             <h3>3. Who is the owner of Facebook ?<br><br>
                 <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
                 a. Elon Musk
@@ -182,7 +185,10 @@
                 <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
                 d. Mark Zukerberg
             </h3>
+            <button type="button" id="next">Next</button>
+            </div>
             <br>
+            <div id="question4">
             <h3>4. Most written programming language ?<br><br>
                 <input type="radio" name="JavaHtmlPythonPhp" value="">
                 a. Java
@@ -196,7 +202,10 @@
                 <input type="radio" name="JavaHtmlPythonPhp" value="">
                 d. Php
             </h3>
+            <button type="button" id="next">Next</button>
+            </div>
             <br>
+            <div id="question5">
             <h3>5. Who is the owner of Micro-Soft ?<br><br>
                 <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
                 a. Bill Gates
@@ -210,6 +219,8 @@
                 <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
                 d. Benard Wilton
             </h3>
+            <button type="button" id="next">Next</button>
+            </div>
         </div>
     </div>
     {% endblock %}

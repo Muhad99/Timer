@@ -1,9 +1,11 @@
 from flask import Flask,render_template, Response, request, redirect, url_for, session
 from datetime import datetime
 from flask_bootstrap import Bootstrap
+import re
+import time
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
-import re
+
 
 
 
@@ -15,28 +17,24 @@ app.secret_key = 'key'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'test'
+app.config['MYSQL_DB'] = 'advance'
 
 
 mysql = MySQL(app)
 
 bootstrap = Bootstrap(app)
 
+@app.route('/index')
+def index():
+    now = datetime.now()
+    date_time = now.strftime("%H:%M:%S")
+    return render_template('index.html', date_time=date_time)
 
 @app.route('/login/index')
 def home():
     if 'loggedin' in session:
         return render_template('index.html', username=session['username'])
     return redirect(url_for('/log'))
-
-
-
-
-@app.route('/index')
-def index():
-    now = datetime.now()
-    date_time = now.strftime("%H:%M:%S")
-    return render_template('index.html', date_time=date_time)
 
 @app.route('/')
 def signup():
@@ -51,7 +49,7 @@ def reg():
         password = request.form['password']
         email = request.form['email']
         cursor = mysql.connection.cursor()
-        cursor.execute('INSERT INTO register VALUES (NULL, %s, %s, %s)', (username, password, email,))
+        cursor.execute('INSERT INTO accounts VALUES (NULL, %s, %s, %s)', (username, password, email,))
         mysql.connection.commit()
         msg = 'You have successfully registered!'
         return render_template('login.html', msg=msg)
@@ -66,12 +64,12 @@ def log():
         username = request.form['username']
         password = request.form['password']
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT * FROM register WHERE username = % s AND password = % s', (username, password, ))
+        cursor.execute('SELECT * FROM accounts WHERE username = % s AND password = % s', (username, password, ))
         account = cursor.fetchone()
         if account:
             session['loggedin'] = True
-            session['Id'] = account['ID']
-            session['Username'] = account['Username']
+            session['Id'] = account['id']
+            session['Username'] = account['username']
             msg = 'Logged in successfully !'
             return render_template('base.html', msg = 'username')
         else:
