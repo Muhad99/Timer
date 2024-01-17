@@ -162,33 +162,34 @@
             <h1>INSTRUCTION:</h1>
         </div>
         <div class="page_content">
-            <section class="question1" id="question1">
-                <h3>1. Who is the President of Egypt?<br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
-                    <br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> b. Peter
-                    <br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> c. Matthew
-                    <br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
-                </h3>
-                <button type="button" id="next" href="#question2">Next</button>
-            </section>
-            <br>
+            <div class="question">
+                <section class="question1" id="question1">
+                    <h3>1. Who is the President of Egypt?<br><br>
+                        <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
+                        <br><br>
+                        <input type="radio" name="JohnPeterMatthewMoses" value=""> b. Peter
+                        <br><br>
+                        <input type="radio" name="JohnPeterMatthewMoses" value=""> c. Matthew
+                        <br><br>
+                        <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
+                    </h3>
+                    <button type="button" id="next" href="#question2">Next</button>
+                </section>
+                <br>
 
-            <style>
-                #next {
-                    background-color: blue;
-                    color: white;
-                    margin-left: 50%;
-                    width: 100px;
-                    height: 30px;
-                    border: 1px solid #dee0e4;
-                    margin-bottom: 20px;
-                    padding: 0 15px;
-                }
-            </style>
-            <!-- <section class="question2" id="question2">
+                <style>
+                    #next {
+                        background-color: blue;
+                        color: white;
+                        margin-left: 50%;
+                        width: 100px;
+                        height: 30px;
+                        border: 1px solid #dee0e4;
+                        margin-bottom: 20px;
+                        padding: 0 15px;
+                    }
+                </style>
+                <section class="question2" id="question2">
                 <h3>2. what is the name of an actor named "The rock"?<br><br>
                     <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
                     a. Kelly Parker
@@ -255,9 +256,44 @@
                     d. Benard Wilton
                 </h3>
                 <button type="button" id="next">Next</button>
-            </section> -->
+            </section>
+            </div>
         </div>
     </div>
+
+    <script>
+        const btn = document.querySelector("#next"),
+            button = button.querySelectorAll("button"),
+            totalBtn = button.length,
+            allSection = document.querySelectorAll(".section"),
+            totalSection = allSection.length;
+
+            for (let i=0; i<totalBtn; i++){
+            const a=button[i].querySelector("a")
+            a.addEventListener("click", function(){
+                // remove back section class
+                removeBackSectionClass();
+
+                for (let i=0; i<totalSection; i++){
+                allSection[i].classList.remove("back-section");
+            }
+
+                for (let j=0; j<totalBtn; j++){
+                    if(button[j].querySelector("a").classList.contains("active")){
+                        // add back section class
+                        addBackSectionClass(j);
+                    }
+                    button[j].querySelector("a").classList.remove("active")
+                }
+                this.classList.add("active"); 
+                showSection(this);
+
+                if(window.innerWidth < 1200){
+                    asideSectionTogglerBtn();
+                }
+            })
+        }
+    </script>
     {% endblock %}
 </body>
 
