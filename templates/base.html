@@ -12,26 +12,7 @@
     {% extends "bootstrap/base.html" %}
     {% block title %}Flasky{% endblock %}
     {% block navbar %}
-    <div class="navbar navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">HOME</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Exam</a></li>
-                    <li><a href="/">Project</a></li>
-                    <li><a href="/">Scores</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
     {% endblock %}
 
     {% block content %}
@@ -164,7 +145,7 @@
         <div class="page_content">
             <div class="question">
                 <section class="question1" id="question1">
-                    <h3>1. Who is the President of Egypt?<br><br>
+                    <h3><li>1. Who is the President of Egypt?</li><br><br>
                         <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
                         <br><br>
                         <input type="radio" name="JohnPeterMatthewMoses" value=""> b. Peter
@@ -262,13 +243,13 @@
     </div>
 
     <script>
-        const btn = document.querySelector("#next"),
+        const next = document.querySelector("#next"),
             button = button.querySelectorAll("button"),
-            totalBtn = button.length,
+            totalButton = button.length,
             allSection = document.querySelectorAll(".section"),
             totalSection = allSection.length;
 
-            for (let i=0; i<totalBtn; i++){
+            for (let i=0; i<totalButton; i++){
             const a=button[i].querySelector("a")
             a.addEventListener("click", function(){
                 // remove back section class
@@ -278,7 +259,7 @@
                 allSection[i].classList.remove("back-section");
             }
 
-                for (let j=0; j<totalBtn; j++){
+                for (let j=0; j<totalButton; j++){
                     if(button[j].querySelector("a").classList.contains("active")){
                         // add back section class
                         addBackSectionClass(j);
@@ -289,7 +270,7 @@
                 showSection(this);
 
                 if(window.innerWidth < 1200){
-                    asideSectionTogglerBtn();
+                    questionSection();
                 }
             })
         }
