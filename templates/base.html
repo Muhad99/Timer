@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
     <title>Document</title>
 </head>
 
@@ -50,12 +51,14 @@
                     width: 15%;
                     height: 50px;
                 }
-                td{
+
+                td {
                     text-align: center;
                     background-color: #f2f2f2;
-                    
+
                 }
-                tr{
+
+                tr {
                     border-color: #f2f2f2;
                 }
             </style>
@@ -159,7 +162,7 @@
             <h1>INSTRUCTION:</h1>
         </div>
         <div class="page_content">
-            <div id="question1">
+            <section class="question1" id="question1">
                 <h3>1. Who is the President of Egypt?<br><br>
                     <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
                     <br><br>
@@ -169,10 +172,23 @@
                     <br><br>
                     <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
                 </h3>
-                <button type="button" id="next">Next</button>
-            </div>
+                <button type="button" id="next" href="#question2">Next</button>
+            </section>
             <br>
-            <div id="question2">
+
+            <style>
+                #next {
+                    background-color: blue;
+                    color: white;
+                    margin-left: 50%;
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid #dee0e4;
+                    margin-bottom: 20px;
+                    padding: 0 15px;
+                }
+            </style>
+            <!-- <section class="question2" id="question2">
                 <h3>2. what is the name of an actor named "The rock"?<br><br>
                     <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
                     a. Kelly Parker
@@ -187,10 +203,10 @@
                     d. Tom Holland
                 </h3>
                 <button type="button" id="next">Next</button>
-            </div>
+            </section>
 
             <br>
-            <div id="question3">
+            <section class="question3" id="question3">
                 <h3>3. Who is the owner of Facebook ?<br><br>
                     <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
                     a. Elon Musk
@@ -205,9 +221,9 @@
                     d. Mark Zukerberg
                 </h3>
                 <button type="button" id="next">Next</button>
-            </div>
+            </section>
             <br>
-            <div id="question4">
+            <section class="question4" id="question4">
                 <h3>4. Most written programming language ?<br><br>
                     <input type="radio" name="JavaHtmlPythonPhp" value="">
                     a. Java
@@ -222,9 +238,9 @@
                     d. Php
                 </h3>
                 <button type="button" id="next">Next</button>
-            </div>
+            </section>
             <br>
-            <div id="question5">
+            <section class="question5" id="question5">
                 <h3>5. Who is the owner of Micro-Soft ?<br><br>
                     <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
                     a. Bill Gates
@@ -239,7 +255,7 @@
                     d. Benard Wilton
                 </h3>
                 <button type="button" id="next">Next</button>
-            </div>
+            </section> -->
         </div>
     </div>
     {% endblock %}
