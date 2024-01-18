@@ -1,145 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<!-- <body>
     <h1>INSTRUCTION:</h1>
-</div>
-<div class="page_content">
-    <div class="question">
-        <section class="question1" id="question1">
-            <h3><li>1. Who is the President of Egypt?</li><br><br>
-                <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
-                <br><br>
-                <input type="radio" name="JohnPeterMatthewMoses" value=""> b. Peter
-                <br><br>
-                <input type="radio" name="JohnPeterMatthewMoses" value=""> c. Matthew
-                <br><br>
-                <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
-            </h3>
-            <button type="button" id="next" href="#question2">Next</button>
-        </section>
-        <br>
-
-        <style>
-            #next {
-                background-color: blue;
-                color: white;
-                margin-left: 50%;
-                width: 100px;
-                height: 30px;
-                border: 1px solid #dee0e4;
-                margin-bottom: 20px;
-                padding: 0 15px;
-            }
-        </style>
-        <section class="question2" id="question2">
-        <h3>2. what is the name of an actor named "The rock"?<br><br>
-            <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-            a. Kelly Parker
-            <br><br>
-            <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-            b. John Cena
-            <br><br>
-            <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-            c. Dwayne Johnson
-            <br><br>
-            <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-            d. Tom Holland
-        </h3>
-        <button type="button" id="next">Next</button>
-    </section>
-
-    <br>
-    <section class="question3" id="question3">
-        <h3>3. Who is the owner of Facebook ?<br><br>
-            <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-            a. Elon Musk
-            <br><br>
-            <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-            b. Tesla Wesley
-            <br><br>
-            <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-            c. Bill Gates
-            <br><br>
-            <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-            d. Mark Zukerberg
-        </h3>
-        <button type="button" id="next">Next</button>
-    </section>
-    <br>
-    <section class="question4" id="question4">
-        <h3>4. Most written programming language ?<br><br>
-            <input type="radio" name="JavaHtmlPythonPhp" value="">
-            a. Java
-            <br><br>
-            <input type="radio" name="JavaHtmlPythonPhp" value="">
-            b. Html
-            <br><br>
-            <input type="radio" name="JavaHtmlPythonPhp" value="">
-            c. Python
-            <br><br>
-            <input type="radio" name="JavaHtmlPythonPhp" value="">
-            d. Php
-        </h3>
-        <button type="button" id="next">Next</button>
-    </section>
-    <br>
-    <section class="question5" id="question5">
-        <h3>5. Who is the owner of Micro-Soft ?<br><br>
-            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-            a. Bill Gates
-            <br><br>
-            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-            b. Zen Bill
-            <br><br>
-            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-            c. Mark Zukerberg
-            <br><br>
-            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-            d. Benard Wilton
-        </h3>
-        <button type="button" id="next">Next</button>
-    </section>
     </div>
-</div>
-</div>
+    <div class="page_content">
+        <div class="question">
+            <section class="question1" id="question1">
+                <h3>
+                    <li>1. Who is the President of Egypt?</li><br><br>
+                    <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
+                    <br><br>
+                    <input type="radio" name="JohnPeterMatthewMoses" value=""> b. Peter
+                    <br><br>
+                    <input type="radio" name="JohnPeterMatthewMoses" value=""> c. Matthew
+                    <br><br>
+                    <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
+                </h3>
+                <button type="button" id="next" href="#question2">Next</button>
+            </section>
+            <br>
 
-<script>
-const next = document.querySelector("next"),
-    button = button.querySelectorAll("button"),
-    totalButton = button.length,
-    allSection = document.querySelectorAll(".section"),
-    totalSection = allSection.length;
+            <style>
+                #next {
+                    background-color: blue;
+                    color: white;
+                    margin-left: 50%;
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid #dee0e4;
+                    margin-bottom: 20px;
+                    padding: 0 15px;
+                }
+            </style>
+            <section class="question2" id="question2">
+                <h3>2. what is the name of an actor named "The rock"?<br><br>
+                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                    a. Kelly Parker
+                    <br><br>
+                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                    b. John Cena
+                    <br><br>
+                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                    c. Dwayne Johnson
+                    <br><br>
+                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                    d. Tom Holland
+                </h3>
+                <button type="button" id="next">Next</button>
+            </section>
 
-    for (let i=0; i<totalButton; i++){
-    const a=button[i].querySelector("a")
-    a.addEventListener("click", function(){
-        // remove back section class
-        removeBackSectionClass();
+            <br>
+            <section class="question3" id="question3">
+                <h3>3. Who is the owner of Facebook ?<br><br>
+                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                    a. Elon Musk
+                    <br><br>
+                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                    b. Tesla Wesley
+                    <br><br>
+                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                    c. Bill Gates
+                    <br><br>
+                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                    d. Mark Zukerberg
+                </h3>
+                <button type="button" id="next">Next</button>
+            </section>
+            <br>
+            <section class="question4" id="question4">
+                <h3>4. Most written programming language ?<br><br>
+                    <input type="radio" name="JavaHtmlPythonPhp" value="">
+                    a. Java
+                    <br><br>
+                    <input type="radio" name="JavaHtmlPythonPhp" value="">
+                    b. Html
+                    <br><br>
+                    <input type="radio" name="JavaHtmlPythonPhp" value="">
+                    c. Python
+                    <br><br>
+                    <input type="radio" name="JavaHtmlPythonPhp" value="">
+                    d. Php
+                </h3>
+                <button type="button" id="next">Next</button>
+            </section>
+            <br>
+            <section class="question5" id="question5">
+                <h3>5. Who is the owner of Micro-Soft ?<br><br>
+                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                    a. Bill Gates
+                    <br><br>
+                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                    b. Zen Bill
+                    <br><br>
+                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                    c. Mark Zukerberg
+                    <br><br>
+                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                    d. Benard Wilton
+                </h3>
+                <button type="button" id="next">Next</button>
+            </section>
+        </div>
+    </div>
+    </div>
 
-        for (let i=0; i<totalSection; i++){
-        allSection[i].classList.remove("back-section");
-    }
+    <script>
+        const next = document.querySelector("next"),
+            button = button.querySelectorAll("button"),
+            totalButton = button.length,
+            allSection = document.querySelectorAll(".section"),
+            totalSection = allSection.length;
 
-        for (let j=0; j<totalButton; j++){
-            if(button[j].querySelector("a").classList.contains("active")){
-                // add back section class
-                addBackSectionClass(j);
-            }
-            button[j].querySelector("a").classList.remove("active")
-        }
-        this.classList.add("active"); 
-        showSection(this);
+        for (let i = 0; i < totalButton; i++) {
+            const a = button[i].querySelector("a")
+            a.addEventListener("click", function () {
+                // remove back section class
+                removeBackSectionClass();
 
-        if(window.innerWidth < 1200){
-            questionSection();
-        }
-    })
-}
-</script>
+                for (let i = 0; i < totalSection; i++) {
+                    allSection[i].classList.remove("back-section");
+                }
+
+                for (let j = 0; j < totalButton; j++) {
+                    if (button[j].querySelector("a").classList.contains("active")) {
+                        // add back section class
+                        addBackSectionClass(j);
+                    }
+                    button[j].querySelector("a").classList.remove("active")
+                }
+                this.classList.add("active");
+                showSection(this);
+
+                if (window.innerWidth < 1200) {
+                    questionSection();
+                }
+            })
+        } -->
+
+        <div class="container">
+            <div class="page-header">
+
+                <div id="timer" name="Timer:"></div>
+            </h1>
+            <script>
+
+                var seconds = 30;
+                function countdown() {
+                    seconds--;
+                var minutes = Math.floor(seconds / 60);
+                var remainingSeconds = seconds % 60;
+                if (remainingSeconds < 10) {
+                    remainingSeconds = "0" + remainingSeconds;
+                    }
+                document.getElementById("timer").innerHTML = minutes + ":" + remainingSeconds;
+                if (seconds == 0) {
+                    clearInterval(countdownTimer);
+                alert("Time's up!");
+                    }
+
+                }
+                var countdownTimer = setInterval(countdown, 1000);
+    </script>
+    <br>
+    </script>
+
+
+
+  
 </body>
+
 </html>
