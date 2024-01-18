@@ -1,179 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EXAMINATION Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/skins/pink.css" type="text/css">
+
+    <!--Live Style Switcher - Demo Only-->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="/static/css/skins/pink.css" type="text/css"
+        disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="/static/css/skins/blue.css" type="text/css"
+        disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="/static/css/skins/orange.css" type="text/css"
+        disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="/static/css/skins/yellow.css" type="text/css"
+        disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="/static/css/skins/green.css" type="text/css"
+        disabled>
+
+    <link rel="stylesheet" href="/static/css/styleSwitcher.css" type="text/css">
+
+
 </head>
 
-<!-- <body>
-    <h1>INSTRUCTION:</h1>
+<body>
+
+    <div class="preloaded">
+        <div class="loader">
+
+        </div>
     </div>
-    <div class="page_content">
-        <div class="question">
-            <section class="question1" id="question1">
-                <h3>
-                    <li>1. Who is the President of Egypt?</li><br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
-                    <br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> b. Peter
-                    <br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> c. Matthew
-                    <br><br>
-                    <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
-                </h3>
-                <button type="button" id="next" href="#question2">Next</button>
-            </section>
-            <br>
 
-            <style>
-                #next {
-                    background-color: blue;
-                    color: white;
-                    margin-left: 50%;
-                    width: 100px;
-                    height: 30px;
-                    border: 1px solid #dee0e4;
-                    margin-bottom: 20px;
-                    padding: 0 15px;
-                }
-            </style>
-            <section class="question2" id="question2">
-                <h3>2. what is the name of an actor named "The rock"?<br><br>
-                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-                    a. Kelly Parker
-                    <br><br>
-                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-                    b. John Cena
-                    <br><br>
-                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-                    c. Dwayne Johnson
-                    <br><br>
-                    <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
-                    d. Tom Holland
-                </h3>
-                <button type="button" id="next">Next</button>
-            </section>
 
-            <br>
-            <section class="question3" id="question3">
-                <h3>3. Who is the owner of Facebook ?<br><br>
-                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-                    a. Elon Musk
-                    <br><br>
-                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-                    b. Tesla Wesley
-                    <br><br>
-                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-                    c. Bill Gates
-                    <br><br>
-                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
-                    d. Mark Zukerberg
-                </h3>
-                <button type="button" id="next">Next</button>
+    <!--main-container-->
+    <div class="main-container">
+        <!--Aside begins-->
+        <div class="aside">
+            <!--logo-->
+            <div class="logo">
+                <a href="#"> COMMON ENTRANCE EXAMINATION</a>
+            </div>
+            <!--Nav Toggle btn-->
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+            <!--Nav-->
+            <ul class="nav">
+                <li><a href="#question1" class="active"><i class="fa fa-home"></i>Question 1</a></li>
+                <li><a href="#question2"><i class="fa fa-user"></i>Question 2</a></li>
+                <li><a href="#question3"><i class="fa fa-list"></i>Question 3</a></li>
+                <li><a href="#question4"><i class="fa fa-briefcase"></i>Question 4</a></li>
+                <li><a href="#question5"><i class="fa fa-envelope"></i>Question 5</a></li>
+                <!-- <li><a href="#question6"><i class="fa fa-envelope"></i>Question 6</a></li>
+        <li><a href="#question7"><i class="fa fa-envelope"></i>Question 7</a></li>
+        <li><a href="#question8"><i class="fa fa-envelope"></i>Question 8</a></li>
+        <li><a href="#question9"><i class="fa fa-envelope"></i>Question 9</a></li>
+        <li><a href="#question10"><i class="fa fa-envelope"></i>Question 10</a></li> -->
+            </ul>
+            <!--Copyright-->
+            <div class="copyright-text">
+                &copy; 2021 Jascube Technologies
+            </div>
+
+        </div>
+        <!--Aside ends-->
+        <!--Main content-->
+        <div class="main-content">
+            <table class="tab" style="position: fixed;">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>32</td>
+                    <td>33</td>
+                    <td>34</td>
+                    <td>35</td>
+                    <td>36</td>
+                    <td>37</td>
+                    <td>38</td>
+                    <td>39</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>42</td>
+                    <td>43</td>
+                    <td>44</td>
+                    <td>45</td>
+                    <td>46</td>
+                    <td>47</td>
+                    <td>48</td>
+                    <td>49</td>
+                    <td>50</td>
+                </tr>
+            </table>
+
+            <!--question1 section-->
+            <section class="question1 section active" id="question1">
+                <div class="container">
+                    <div class="intro">
+                        <div class="section-title padd-15">
+                            <h2>JASCUBE CODE SCHOOL 2023/2024 </h3>
+                        </div>
+                        <h3>
+                            1. Who is the President of Egypt?<br>
+                            <input type="radio" name="JohnPeterMatthewMoses" value=""> a. John
+                            <br>
+                            <input type="radio" name="JohnPeterMatthewMoses" value=""> b. Peter
+                            <br>
+                            <input type="radio" name="JohnPeterMatthewMoses" value=""> c. Matthew
+                            <br>
+                            <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
+                        </h3>
+                        <button type="button" id="prev">Prev...</button>
+                        <button type="button" id="next">Next</button>
+                    </div>
+                </div>
+
             </section>
-            <br>
-            <section class="question4" id="question4">
-                <h3>4. Most written programming language ?<br><br>
-                    <input type="radio" name="JavaHtmlPythonPhp" value="">
-                    a. Java
-                    <br><br>
-                    <input type="radio" name="JavaHtmlPythonPhp" value="">
-                    b. Html
-                    <br><br>
-                    <input type="radio" name="JavaHtmlPythonPhp" value="">
-                    c. Python
-                    <br><br>
-                    <input type="radio" name="JavaHtmlPythonPhp" value="">
-                    d. Php
-                </h3>
-                <button type="button" id="next">Next</button>
+            <!--Home Section End-->
+
+            <!--question2 section Begins-->
+            <section class="question2 section" id="question2">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <div class="section-title padd-15">
+                                        <h2>JASCUBE CODE SCHOOL 2023/2024</h3>
+                                    </div>
+                                    <h3>2. what is the name of an actor named "The rock"?<br>
+                                        <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                                        a. Kelly Parker
+                                        <br>
+                                        <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                                        b. John Cena
+                                        <br>
+                                        <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                                        c. Dwayne Johnson
+                                        <br>
+                                        <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
+                                        d. Tom Holland
+                                    </h3>
+                                    <button type="button" id="prev">Prev...</button>
+                                    <button type="button" id="next">Next</button>
+                                </div>
+                            </div>
+                        </div>
             </section>
-            <br>
-            <section class="question5" id="question5">
-                <h3>5. Who is the owner of Micro-Soft ?<br><br>
-                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-                    a. Bill Gates
-                    <br><br>
-                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-                    b. Zen Bill
-                    <br><br>
-                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-                    c. Mark Zukerberg
-                    <br><br>
-                    <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
-                    d. Benard Wilton
-                </h3>
-                <button type="button" id="next">Next</button>
+            <!--About Section Ends-->
+
+            <!--Service Section Begins-->
+            <section class="question3 section" id="question3">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-text padd-15">
+                            <div class="section-title padd-15">
+                                <h2>JASCUBE CODE SCHOOL 2023/2024</h3>
+                            </div>
+                            <div class="row">
+                                <h3>3. Who is the owner of Facebook ?<br>
+                                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                                    a. Elon Musk
+                                    <br>
+                                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                                    b. Tesla Wesley
+                                    <br>
+                                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                                    c. Bill Gates
+                                    <br>
+                                    <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
+                                    d. Mark Zukerberg <br>
+                                    <button type="button" id="prev">Prev...</button>
+                                    <button type="button" id="next">Next</button>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!--Service Section Ends-->
+
+            <!--Portfolio Section Begins-->
+            <section class="question4 section" id="question4">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <div class="portfolio-filter padd-15">
+                                <h2>JASCUBE CODE SCHOOL 2023/2024</h2>
+                            </div><br><br>
+                            <h3>4. Most written programming language ?<br>
+                                <input type="radio" name="JavaHtmlPythonPhp" value="">
+                                a. Java
+                                <br>
+                                <input type="radio" name="JavaHtmlPythonPhp" value="">
+                                b. Html
+                                <br>
+                                <input type="radio" name="JavaHtmlPythonPhp" value="">
+                                c. Python
+                                <br>
+                                <input type="radio" name="JavaHtmlPythonPhp" value="">
+                                d. Php
+                            </h3>
+                            <button type="button" id="prev">Prev...</button>
+                            <button type="button" id="next">Next</button>
+                        </div>
+                    </div>
+            </section>
+            <!--Portfolio Section Ends-->
+
+
+            <!--question5 section begins-->
+            <section class="question5 section" id="question5">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>JASCUBE CODE SCHOOL 2023/2024</h2>
+                        </div>
+                        <!-- Blog content -->
+                        <h3>5. Who is the owner of Micro-Soft ?<br>
+                            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                            a. Bill Gates
+                            <br>
+                            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                            b. Zen Bill
+                            <br>
+                            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                            c. Mark Zukerberg
+                            <br>
+                            <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
+                            d. Benard Wilton <br>
+                            <button type="button" id="prev">Prev...</button>
+                            <button type="button" id="next">Next</button>
+                        </h3>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
+    <style>
+        button {
+            background-color: blue;
+            color: white;
+            /* margin-left: 50%; */
+            width: 100px;
+            height: 30px;
+            border: 1px solid #dee0e4;
+            /* margin: 10px 10px 30px; */
+            padding: 0 15px;
+            cursor: pointer;
+        }
+
+        #next {
+            margin-left: 100px;
+        }
+    </style>
+
+
+    <!-- Lightbox begins-->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img src="images/portfolio/1a.png" class="lightbox-img" onclick="nextItem()">
+            <div class="lightbox-caption">
+                <div class="caption-text">Web Design</div>
+                <div class="caption-counter"></div>
+            </div>
+        </div>
+        <div class="lightbox-controls">
+            <div class="prev-item" onclick="prevItem"><i class="fa fa-angle-left"></i></div>
+            <div class="next-item" onclick="nextItem"><i class="fa fa-angle-right"></i></div>
+        </div>
     </div>
+    <!-- Lightbox ends-->
 
-    <script>
-        const next = document.querySelector("next"),
-            button = button.querySelectorAll("button"),
-            totalButton = button.length,
-            allSection = document.querySelectorAll(".section"),
-            totalSection = allSection.length;
+    <!--Live Switcher begins-->
+    <div class="style-switcher">
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="Javascript:void(0);" title="pink" style="background-color: #ec1839"
+                    onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="Javascript:void(0);" title="blue" style="background-color: #2196f3"
+                    onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="Javascript:void(0);" title="orange" style="background-color: #fa5b0f"
+                    onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="Javascript:void(0);" title="yellow" style="background-color: #ffb400"
+                    onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="Javascript:void(0);" title="green" style="background-color: #72b626"
+                    onclick="setActiveStyle('green')"></a></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+        <input type="radio" class="body-skin" name="body-style" value="dark">
+        Dark
+        </label>
+    </div>
+    <!--Live Switcher end-->
 
-        for (let i = 0; i < totalButton; i++) {
-            const a = button[i].querySelector("a")
-            a.addEventListener("click", function () {
-                // remove back section class
-                removeBackSectionClass();
+    <!--Javascript Template-->
+    <script src="/js/script.js"></script>
 
-                for (let i = 0; i < totalSection; i++) {
-                    allSection[i].classList.remove("back-section");
-                }
-
-                for (let j = 0; j < totalButton; j++) {
-                    if (button[j].querySelector("a").classList.contains("active")) {
-                        // add back section class
-                        addBackSectionClass(j);
-                    }
-                    button[j].querySelector("a").classList.remove("active")
-                }
-                this.classList.add("active");
-                showSection(this);
-
-                if (window.innerWidth < 1200) {
-                    questionSection();
-                }
-            })
-        } -->
-
-        <div class="container">
-            <div class="page-header">
-
-                <div id="timer" name="Timer:"></div>
-            </h1>
-            <script>
-
-                var seconds = 30;
-                function countdown() {
-                    seconds--;
-                var minutes = Math.floor(seconds / 60);
-                var remainingSeconds = seconds % 60;
-                if (remainingSeconds < 10) {
-                    remainingSeconds = "0" + remainingSeconds;
-                    }
-                document.getElementById("timer").innerHTML = minutes + ":" + remainingSeconds;
-                if (seconds == 0) {
-                    clearInterval(countdownTimer);
-                alert("Time's up!");
-                    }
-
-                }
-                var countdownTimer = setInterval(countdown, 1000);
-    </script>
-    <br>
-    </script>
-
-
-
-  
+    <!-- styleSwitcher Javascript -->
+    <script src="/js/styleSwitcher.js"></script>
 </body>
 
 </html>
