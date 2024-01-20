@@ -149,8 +149,8 @@
                             <br>
                             <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
                         </h3>
-                        <button type="button" id="prev">Prev...</button>
-                        <button type="button" id="next">Next</button>
+                        <button type="button" class="prev">Prev...</button>
+                        <button type="button" class="next">Next</button>
                     </div>
                 </div>
 
@@ -180,8 +180,8 @@
                                         <input type="radio" name="KellyParkerJohnCenaDwayneJohnsonTomHolland" value="">
                                         d. Tom Holland
                                     </h3>
-                                    <button type="button" id="prev">Prev...</button>
-                                    <button type="button" id="next">Next</button>
+                                    <button type="button" class="prev">Prev...</button>
+                                    <button type="button" class="next">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -209,14 +209,23 @@
                                     <br>
                                     <input type="radio" name="ElonMuskTeslaWesleyBillGatesMarkZukerberg" value="">
                                     d. Mark Zukerberg <br>
-                                    <button type="button" id="prev">Prev...</button>
-                                    <button type="button" id="next">Next</button>
+                                    <button type="button" class="prev">Prev...</button>
+                                    <button type="button" class="next">Next</button>
                                 </h3>
                             </div>
                         </div>
                     </div>
             </section>
             <!--Service Section Ends-->
+
+            <script>
+                const buttons = document.querySelectorAll(".prev");
+                buttons.forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        console.log("You clicked a button");
+                    });
+                });
+            </script>
 
             <!--Portfolio Section Begins-->
             <section class="question4 section" id="question4">
@@ -239,8 +248,8 @@
                                 <input type="radio" name="JavaHtmlPythonPhp" value="">
                                 d. Php
                             </h3>
-                            <button type="button" id="prev">Prev...</button>
-                            <button type="button" id="next">Next</button>
+                            <button type="button" class="prev">Prev...</button>
+                            <button type="button" class="next">Next</button>
                         </div>
                     </div>
             </section>
@@ -267,8 +276,8 @@
                             <br>
                             <input type="radio" name="BillGatesZenBillMarkZukerber" value="">
                             d. Benard Wilton <br>
-                            <button type="button" id="prev">Prev...</button>
-                            <button type="button" id="next">Next</button>
+                            <button type="button" class="prev">Prev...</button>
+                            <button type="button" class="next">Next</button>
                         </h3>
                     </div>
                 </div>
