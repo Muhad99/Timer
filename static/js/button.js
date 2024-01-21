@@ -27,8 +27,8 @@ for (let i = 0; i < totalFilterBtn; i++) {
 
             }
             else {
-                portfolioItems[k].classList.remove("show");
-                portfolioItems[k].classList.add("hide");
+                portfolioItems[k].classButton.remove("show");
+                portfolioItems[k].classButton.add("hide");
             }
         }
     })
@@ -91,7 +91,7 @@ lightbox.addEventListener("click", function (event) {
 })
 
 //   Aside Nav
-const nav = document.querySelector(".nav"),
+const prev = document.querySelector(".prev"),
     navList = nav.querySelectorAll("li"),
     totalNavList = navList.length,
     allSection = document.querySelectorAll(".section"),
