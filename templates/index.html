@@ -149,8 +149,8 @@
                             <br>
                             <input type="radio" name="JohnPeterMatthewMoses" value=""> d. Moses
                         </h3>
-                        <li class="prev" href="#question5">Prev...</li>
-                        <li class="next" href="#question2">Next</li>
+                        <button type="button"><a href="#question5" class="prev">Prev...</a></button>
+                        <button type="button" class="next">Next</button>
                     </div>
                 </div>
 
@@ -218,14 +218,14 @@
             </section>
             <!--Service Section Ends-->
 
-            <!-- <script>
+            <script>
                 const buttons = document.querySelectorAll(".prev", ".next");
                 buttons.forEach(function (button) {
                     button.addEventListener("click", function () {
                         alert("You clicked a button");
                     });
                 });
-            </script> -->
+            </script>
 
             <!--Portfolio Section Begins-->
             <section class="question4 section" id="question4">
@@ -285,8 +285,7 @@
         </div>
     </div>
     <style>
-        li .prev,
-        .next {
+        button {
             background-color: blue;
             color: white;
             /* margin-left: 50%; */
