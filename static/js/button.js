@@ -93,28 +93,28 @@ lightbox.addEventListener("click", function (event) {
 //   Aside Nav
 const prev = document.querySelector(".prev"),
     prevButton = prev.querySelectorAll("button"),
-    totalNavList = navList.length,
+    totalPrevButton = prevButton.length,
     allSection = document.querySelectorAll(".section"),
     totalSection = allSection.length;
 
-for (let i = 0; i < totalNavList; i++) {
-    const a = navList[i].querySelector("a")
+for (let i = 0; i < totalPrevButton; i++) {
+    const a = prevButton[i].querySelector("a")
     a.addEventListener("click", function () {
         // remove back section class
         removeBackSectionClass();
 
         for (let i = 0; i < totalSection; i++) {
-            allSection[i].classList.remove("back-section");
+            allSection[i].classButton.remove("back-section");
         }
 
-        for (let j = 0; j < totalNavList; j++) {
-            if (navList[j].querySelector("a").classList.contains("active")) {
+        for (let j = 0; j < totalPrevButton; j++) {
+            if (prevButton[j].querySelector("a").classButton.contains("active")) {
                 // add back section class
                 addBackSectionClass(j);
             }
-            navList[j].querySelector("a").classList.remove("active")
+            navList[j].querySelector("a").classButton.remove("active")
         }
-        this.classList.add("active");
+        this.classButton.add("active");
         showSection(this);
 
         if (window.innerWidth < 1200) {
