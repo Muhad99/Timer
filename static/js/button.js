@@ -92,7 +92,7 @@ lightbox.addEventListener("click", function (event) {
 
 //   Aside Nav
 const prev = document.querySelector(".prev"),
-    navList = nav.querySelectorAll("li"),
+    prevButton = prev.querySelectorAll("button"),
     totalNavList = navList.length,
     allSection = document.querySelectorAll(".section"),
     totalSection = allSection.length;
