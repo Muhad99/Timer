@@ -22,8 +22,8 @@ for (let i = 0; i < totalFilterBtn; i++) {
         const filterValue = this.getAttribute("data-filter");
         for (let k = 0; k < totalportfolioItem; k++) {
             if (filterValue === portfolioItems[k].getAttribute("data-category")) {
-                portfolioItems[k].classList.remove("hide");
-                portfolioItems[k].classList.add("show");
+                portfolioItems[k].classButton.remove("hide");
+                portfolioItems[k].classButton.add("show");
 
             }
             else {
