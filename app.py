@@ -49,7 +49,7 @@ def reg():
         password = request.form['password']
         email = request.form['email']
         cursor = mysql.connection.cursor()
-        cursor.execute('INSERT INTO accounts VALUES (NULL, %s, %s, %s)', (username, password, email,))
+        cursor.execute('INSERT INTO accounts VALUES (%s, %s, %s)', (username, password, email,))
         mysql.connection.commit()
         msg = 'You have successfully registered!'
         return render_template('login.html', msg=msg)
